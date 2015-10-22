@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products index</title>
+</head>
+<body>
+   <h1>Products</h1>
+    
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+                
+                <% @todos.each do |product| %>
+                
+            <tr>
+                <td><%= product.name %></td>
+                <td><%= product.description %></td>
+                <td><%= product.price %></td>
+                <td><%= product.quantity %></td>
+                
+            </tr>
+                <% end %>
+
+        </tbody>
+    </table>
+
+    
+</body>
+</html>
